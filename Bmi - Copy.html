@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health First - BMI Calculator</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="bmi">
+        <h2>What is BMI?</h2>
+        <p>BMI (Body Mass Index) is a measure that can help determine if you're a healthy weight for your height.</p>
+        
+        <h2>BMI Calculator</h2>
+        
+		<div class="calculator-container">
+                <div class="scale">
+                    <label for="height">Height (cm): <span id="heightValue">170</span></label>
+                    <input type="range" id="height" name="height" min="100" max="220" value="170" oninput="updateHeightValue(this.value)">
+                </div>
+				
+				<div class="body-images-container">
+					<img src="girl.png" alt="Girl Illustration" class="body-image">
+				</div>
+            
+                <div class="scale">
+                    <label for="weight">Weight (kg): <span id="weightValue">70</span></label>
+                    <input type="range" id="weight" name="weight" min="30" max="150" value="70" oninput="updateWeightValue(this.value)">
+                </div>
+        </div>
+    
+
+        <button onclick="calculateBMI()">Calculate BMI</button>
+
+        <p id="bmi-result"></p>
+        <p id="bmi-category"></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
