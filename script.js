@@ -1,3 +1,18 @@
+window.onload = function() {
+    const popup = document.getElementById('popup');
+    const continueButton = document.getElementById('continueButton');
+
+    // Check if the popup has been shown before
+    if (!localStorage.getItem('popupShown')) {
+        popup.style.display = 'flex'; // Show popup
+    }
+
+    continueButton.addEventListener('click', function() {
+        popup.style.display = 'none';
+        localStorage.setItem('popupShown', 'true'); // Set popup as shown
+    });
+};
+
 function updateHeightValue(value) {
     document.getElementById('heightValue').innerText = value;
 }

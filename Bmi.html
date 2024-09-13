@@ -7,10 +7,16 @@
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
+	
+		
     <div class="bmi">
+		
         <h2>What is BMI?</h2>
         <p>BMI (Body Mass Index) is a measure that can help determine if you're a healthy weight for your height.</p>
-        
+        <nav>
+		  <a href="index.html">Homepage</a> |
+		  <a href="Health-Info.html">Health Info</a>
+		</nav>
         <h2>BMI Calculator</h2>
         
 		<div class="calculator-container">
@@ -25,7 +31,7 @@
             
                 <div class="scale">
                     <label for="weight">Weight (kg): <span id="weightValue">70</span></label>
-                    <input type="range" id="weight" name="weight" min="30" max="150" value="70" oninput="updateWeightValue(this.value)">
+                    <input type="range" id="weight" name="weight" min="30" max="200" value="70" oninput="updateWeightValue(this.value)">
                 </div>
         </div>
     

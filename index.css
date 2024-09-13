@@ -31,7 +31,7 @@ body {
 
 
 .section1 {
-    color: white;
+    color: #86AB89;
     text-align: center;
 	background-color: #DEE5D4;
 	padding: 25px;
@@ -47,6 +47,7 @@ body {
     border-radius: 9px; /* Optional: rounding the corners */
     max-width: 600px; /* Optional: control width */
 	background-color: transparent;
+	
 }
 
 .section3 {
@@ -107,14 +108,58 @@ display: inline-block;
     margin: 0 15px;
     font-size: 18px;
     color: black;
-    background: linear-gradient(135deg, #FFD5CD, #FFEDE0); /* Light blue to lavender */
+    background: linear-gradient(135deg, #9CA986, #DEE5D4); /* Light blue to lavender */
     border-radius: 30px;
     box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
     transition: background 0.3s ease, transform 0.3s ease;
+	width: 120px;
 }
 
 .link-buttons a:hover {
-	background: linear-gradient(135deg, #FFEDE0, #FFD5CD)); /* Reverse the gradient on hover */
+	background: linear-gradient(135deg, #DEE5D4, #9CA986); /* Reverse the gradient on hover */
     transform: translateY(-3px);
 	box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3)
 }
+
+/* Styles for the popup */
+#popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: visible;
+    z-index: 9999;
+}
+
+.popup-content {
+    background-color: #DEE5D4;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+button {
+    background-color: #7DCEA0;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #52BE80;
+}
+
+.student-id {
+    margin-top: 20px;
+    font-style: italic;
+}
+
